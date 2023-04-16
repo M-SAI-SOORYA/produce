@@ -1,0 +1,41 @@
+body{
+    background-image: url("images/istockphoto-1035676256-612x612.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.normall{
+    position: absolute;
+    left:450px;
+    top:80px;
+}
+#mypro{
+    width: 950px;
+    height: 25px;
+    
+}
+.pro{
+    position: absolute;
+    top:600px;
+    left: 250px;
+}
+.but{
+    position: absolute;
+    top:500px;
+    left:650px;
+}
+
+h1{
+    position: absolute;
+    left:450px;
+    color: aquamarine;
+
+}
+.cou{
+    position: absolute;
+    top:450px;
+    left:580px;
+    color: rgb(9, 19, 217);
+
+}

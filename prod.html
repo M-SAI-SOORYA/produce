@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Epic</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="prd.css"/>
+   
+    
+  
+    </head>
+    <body>
+        <div>
+            
+        </div>
+      
+        <h1 class="container">Become Epic!!! with Consistency!</h1>
+        <img src="images\26079ab060401d8a76039e985d63a3e9.jpe" alt="goku" id="normal" class="normall" width="500" height="350">
+       
+        <h3 id="total" class="cou"></h3>
+
+        <button  class="btn btn-info but" onclick="increa()">Increase</button>
+        <div class="container pro">
+                <progress value="0" max="100"  id="mypro"></progress>
+        </div>
+
+
+
+        <script type="text/javascript">
+            var totalCount = document.getElementById("total");
+            var progress=document.getElementById("mypro");
+    
+            var count = 0;
+         
+            function increa(){
+                count+=1;
+                totalCount.innerHTML ="Number of days: " + count;
+                progress.value=count;
+                var image = document.getElementById('normal');
+                if (count>=10 && count<30) {
+                    image.src = "images/DimwittedVapidArcticwolf-size_restricted.gif";
+                }
+                else if(count>=30 && count<50){
+                    image.src = "images/saiyan-powerup.gif";
+                }
+                else if(count>=50 && count<80){
+                    image.src = "images/goku-super.gif";
+
+                }
+                else if(count>=80){
+                    image.src = "images/dragon-ball-super-broly-goku.gif";
+                }
+                else{
+                    image.src="images/200w.gif";
+                }
+            }
+        </script>
+
+    </body>
+</html>
